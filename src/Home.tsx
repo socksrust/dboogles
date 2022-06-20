@@ -752,12 +752,7 @@ const Home = (props: HomeProps) => {
                 </h3>
               )}
               {wallet && isActive && (
-                <BorderLinearProgress
-                  variant="determinate"
-                  value={
-                    100 - ((itemsRedeemed - 2252 + 4966) * 100) / itemsAvailable
-                  }
-                />
+                <BorderLinearProgress variant="determinate" value={80} />
               )}
               <br />
               <MintButtonContainer>
